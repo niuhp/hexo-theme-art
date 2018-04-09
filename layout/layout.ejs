@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+<body>
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <div class="container theme-main">
+      <div class="row">
+          <div class="col-9 theme-content">
+              <%- body %>
+          </div>
+          <div class="col-3 theme-sidebar">
+              <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+          </div>
+      </div>
+  </div>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+</body>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+</html>

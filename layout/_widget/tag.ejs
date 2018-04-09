@@ -1,0 +1,6 @@
+<% if (site.tags.length){ %>
+  <div class="sidebar-module sidebar-module-tag">
+    <h4><%= __('tags') %></h4>
+    <%- list_tags({show_count: theme.widget_tag.show_count, class: 'sidebar-module'}) %>
+  </div>
+<% } %>

@@ -1,0 +1,40 @@
+<% if (post.excerptImg){ %>
+<div class="row article article-excerpt">
+    <div class="col-2 article-excerpt-img">
+        <img  src="<%- post.excerptImg %>" />
+    </div>
+    <div class="col-10 article-excerpt-detail">
+<% } else { %>
+<div class="article article-excerpt">
+    <div class="article-excerpt-detail">
+<% } %>
+       <div class="article-excerpt-meta">
+           <h1 class="font-weight-bold article-title"><a href="<%- url_for(post.path) %>"><%= post.title || 'NO TITLE' %></a></h1>
+           <span class="article-date"><%= date(post.date, null) %></span>
+        <% if (post.categories && post.categories.length){ %>
+           <span class="article-category">
+           <%- list_categories(post.categories, {
+                  show_count: false,
+                  class: 'article-category',
+                  style: 'none',
+                  separator: ' / '
+           })%>
+           </span>
+         <% } %>
+         <%- partial('_plugin/changyan_com_cnt_archive',{article:post}) %>
+       </div>
+       <div class="article-excerpt-content">
+          <% var excerpt = post.excerpt %>
+          <% if ( excerpt ){ %>
+              <% var maxLen = theme.max_excerpt_len %>
+              <% if ( excerpt.length > maxLen ){ %>
+                  <%- excerpt.slice(0,maxLen) %>
+              <% } else { %>
+                  <%- excerpt %>
+              <% } %>
+          <% } else { %>
+              <span class="no_excerpt">文章没有摘要信息，添加摘要需要在文章中加入<code>&lt;!-- more --&gt;</code>标记，标记之前内容为摘要</span>
+          <% } %>
+       </div>
+    </div>
+</div>

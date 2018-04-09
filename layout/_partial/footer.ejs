@@ -1,0 +1,14 @@
+<footer class="footer navbar-fixed-bottom theme-footer row">
+  <nav class="container navbar navbar-expand-lg mx-auto row">
+    <div class="mx-auto">
+      <span class="theme-cpoy">&copy; </span>
+      <span class="theme-date"><%= date(new Date(), 'YYYY') %></span>
+      <span class="theme-author"> <%= config.author %></span>
+      <% if ( theme.icp ) { %>
+      <span class="theme-icp"><%= theme.icp %></span>
+      <% } %>
+      <span class="theme-hexo">Powered by <a href="//hexo.io/" target="_blank">Hexo</a></span>
+      <span class="theme-theme">Theme by <a href="https://github.com/niuhp/hexo-theme-art" target="_blank">hexo-theme-art</a></span>
+    </div>
+  </nav>
+</footer>

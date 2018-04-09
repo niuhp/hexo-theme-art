@@ -1,0 +1,96 @@
+<div class="sidebar-module sidebar-module-about">
+  <% if (theme.widget_about.headImg) { %>
+  <div class="row">
+      <img class="mx-auto" src="<%= theme.widget_about.headImg %>" />
+  </div>
+  <% } %>
+  <h1><%= theme.widget_about.name %></h1>
+  <% if ( theme.widget_about.motto ) { %>
+  <p><%= theme.widget_about.motto %></p>
+  <% } %>
+  <ul class="list-inline">
+    <% if ( theme.widget_about.github ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.github %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.weibo ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.weibo %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.zhihu ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.zhihu %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-zhihu fa-stack-1x fa-inverse">知</i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.weixin ) { %>
+    <li class="list-inline-item">
+        <a id="widget_about_weixin_link" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<img src='<%= theme.widget_about.weixin %>'/>">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        <script>
+            $('#widget_about_weixin_link').tooltip();
+        </script>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.qq ) { %>
+    <li class="list-inline-item">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<%= theme.widget_about.qq %>&site=qq&menu=yes">
+            <span class="fa-stack fa-lg" title="<%= __('widget_about_qq') %>">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.twitter ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.twitter %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.linkedin ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.linkedin %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+    <% if ( theme.widget_about.facebook ) { %>
+    <li class="list-inline-item">
+        <a href="<%= theme.widget_about.facebook %>" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <% } %>
+  </ul>
+</div>

@@ -1,0 +1,71 @@
+<article id="<%= page.layout %>-<%= page.slug %>" class="article article-type-<%= page.layout %>" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+     <h1 class="font-weight-bold article-title"><%= page.title || 'NO TITLE' %></h1>
+  </header>
+
+  <div class="article-meta">
+    <span class="article-date"><%= date(page.date, null) %></span>
+    <% if (config.author){ %>
+        <span class="article-author"><%= config.author %></span>
+    <% } %>
+    <% if (page.categories && page.categories.length){ %>
+       <span class="article-category">
+       <%- list_categories(page.categories, {
+              show_count: false,
+              class: 'article-category',
+              style: 'none',
+              separator: ' / '
+       })%>
+       </span>
+    <% } %>
+    <%- partial('_plugin/changyan_com_cnt_detail') %>
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+        <%- page.content %>
+    </div>
+    <footer class="article-footer">
+      <% if (page.tags && page.tags.length){ %>
+        <%- list_tags(page.tags, {
+          show_count: false,
+          class: 'article-tags'
+        }) %>
+        <script type="text/javascript">
+          $(".article-tags-list").addClass("list-inline");
+          $(".article-tags-list-item").each(function(i,ele){
+            $(ele).addClass("list-inline-item");
+          });
+          $(".article-tags-list-link").each(function(i,ele){
+            $(ele).prepend('<i class="fa fa-tag"></i>');
+          });
+
+        </script>
+      <% } %>
+    </footer>
+  </div>
+</article>
+
+<%- partial('_plugin/changyan_reward',{sid:page.path,cid:"article"}) %>
+<%- partial('_plugin/changyan_com',{sid:page.path}) %>
+
+<% if (page.prev || page.next){ %>
+<nav class="nav nav-pills nav-justified nav-article-page ">
+  <% if (page.next){ %>
+  <a href="<%- url_for(page.next.path) %>" class="nav-item">
+    <i class="fa fa-chevron-left float-left"></i>
+    <span class="article-nav-link-title"><%= page.next.title || '(no title)' %></span>
+  </a>
+  <% } %>
+  <% if (page.prev){ %>
+  <a href="<%- url_for(page.prev.path) %>" class="nav-item">
+    <i class="fa fa-chevron-right float-right"></i>
+    <span class="article-nav-link-title"><%= page.prev.title || '(no title)' %></span>
+  </a>
+  <% } %>
+</nav>
+<% } %>
+
+<%- partial('_plugin/baidu_share') %>
+
+<link href="/css/article.css" rel="stylesheet">

@@ -1,0 +1,46 @@
+.article-title {
+    font-size: 1.2em;
+}
+
+.article-meta span {
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.article-meta span, .article-meta span a {
+    color: #999;
+}
+
+.article-inner {
+    margin-top: 1.5em;
+}
+
+.article-tags-list {
+    list-style-type: none;
+}
+
+.article-tags-list-link {
+    margin-right: 5px;
+    color: #999;
+}
+
+.article-tags-list-link i {
+    margin-right: 3px;
+}
+
+.nav-article-page {
+    margin-top: 20px;
+}
+
+.nav-article-page a {
+    border: 1px solid #337ab7;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-article-page a i {
+    margin-top: 0.25em;
+    height: 1em;
+}

@@ -1,0 +1,6 @@
+<nav class="navbar navbar-expand-lg theme-nav">
+    <% for (var menuName in theme.menu){ %>
+        <a class="navbar-brand" href="<%- url_for(theme.menu[menuName]) %>"><%= __(menuName) %></a>
+    <% } %>
+</nav>
+

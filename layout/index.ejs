@@ -1,0 +1,15 @@
+<% page.posts.each(function(post){ %>
+    <%- partial('_partial/article_excerpt',{post:post})%>
+<% }) %>
+
+<% if (page.total > 1){ %>
+  <div id="pagination-container">
+    <%- bs_paginator({
+      prev_text: '<i class="fa fa-chevron-left"></i>',
+      next_text: '<i class="fa fa-chevron-right"></i>'
+    }) %>
+  </div>
+<% } %>
+
+<link href="/css/archive.css" rel="stylesheet">
+<%- partial('_plugin/changyan_com_cnt_archive_script') %>

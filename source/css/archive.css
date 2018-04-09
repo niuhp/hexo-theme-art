@@ -1,0 +1,38 @@
+.archive-year-wrap {
+    font-size: 1.4em;
+    border: 1px solid lightgray;
+    background: #dae0e5;
+    color: #1b1e21;
+    padding: 0.1em;
+    position: relative;
+    margin: 1em auto;
+}
+
+.article-excerpt {
+    margin-bottom: 20px;
+}
+
+.article-excerpt-img img {
+    width: 100%;
+}
+
+.article-title {
+    font-size: 1.2em;
+}
+
+.article-excerpt-meta span {
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.article-excerpt-meta span, .article-excerpt-meta span a {
+    color: #999;
+}
+
+.article-excerpt-content {
+    margin-top: 0.5em;
+}
+
+.no_excerpt {
+    color: #a21a1f;
+}

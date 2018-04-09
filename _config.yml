@@ -1,0 +1,61 @@
+# 网站图标
+favicon: https://s.niuhp.com/blog/329620302.gif
+
+# 顶部导航栏
+menu:
+  home: /
+  archives: /archives
+  #other: /other
+
+# 摘要最大长度
+max_excerpt_len: 512
+
+# 侧边栏挂件
+widgets:
+- about         # 参考下面 widget_about 内容
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# 关于我挂件
+widget_about:
+  headImg: https://s.niuhp.com/blog/329620302.gif  # 头像
+  name: 牛海朋 # 名字
+  motto: hello,world  # 格言，显示在名字下面
+  github: https://github.com/niuhp  # github 帐号
+  weibo: https://weibo.com/u/2273910663  # 微博帐号
+  zhihu: https://www.zhihu.com/people/xyzabchi  # 知乎帐号
+  weixin: https://s.niuhp.com/blog/weixin.png # 微信二维码图片
+  qq: 329620302  # QQ 号
+  twitter: https://twitter.com/niuhp # 推特帐号
+  linkedin: http://www.linkedin.com/in/%E6%B5%B7%E6%9C%8B-%E7%89%9B-8627b9108/ # 领英帐号
+  facebook: https://www.facebook.com/niu.haipeng # 脸书帐号
+
+# 标签挂件
+widget_tag:
+  show_count: true # 显示每个标签的文章数目
+
+archives:
+  type: 'monthly'  # 归档类型
+  show_count: false
+
+# 畅言评论
+changyan:
+  appid: cysUwQohu
+  appkey: prod_5c110cd3d5c7d51e9e22d2d090da3623
+  show_comment: true # 文章末显示评论框
+  show_reward: true  # 文章末显示打赏
+  #评论数显示设置：archive 归档页显示，detail 详情页显示
+  show_count:
+    archive: true
+    detail: true
+
+baidu:
+  tongji: 437810b3fbae9cd37993dfef1d0b24d3  # 百度统计
+  share: true  # 百度分享
+
+# 备案号
+icp: 京 ICP 备 15062857号-1
+
