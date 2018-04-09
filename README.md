@@ -12,12 +12,12 @@
 3. [Font Awesome 4.7.0](https://fontawesome.com/)
 
 布局使用到的 css、js 有：  
-1. [bs_paginator.js](scripts/bs_paginator.js)<span style="margin-left:2em">分页工具</span>
-2. [archive.css](source/css/archive.css)<span style="margin-left:2em">归档页样式</span>
-3. [article.css](source/css/article.css)<span style="margin-left:2em">文章页样式</span>
-4. [common.styl](source/css/common.styl)<span style="margin-left:2em">公共样式</span>
-5. [highlight.styl](source/css/highlight.styl)<span style="margin-left:2em">代码及 Font Awesome 图标高亮样式</span>
-6. [layout.css](source/css/layout.css)<span style="margin-left:2em">主题布局样式</span>
+1. [分页工具 bs_paginator.js](scripts/bs_paginator.js)
+2. [归档页样式 archive.css](source/css/archive.css)
+3. [文章页样式 article.css](source/css/article.css)
+4. [公共样式 common.styl](source/css/common.styl)
+5. [代码及 Font Awesome 图标高亮样式 highlight.styl](source/css/highlight.styl)
+6. [主题布局样式 layout.css](source/css/layout.css)
     
 **注意：** 目前主题主要在 PC 上使用，手机、Pad 上尚未测试。
 
