@@ -4,6 +4,8 @@
 ### 概览
 
 **hexo-theme-art** 主题的主要特点是简单易用  [>>>>>>在线演示](https://www.niuhp.com)。  
+
+
 主题使用了以下第三方库（详情可查看 [head.ejs](layout/_partial/head.ejs) ）：  
 1. [bootstrap 4.0.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 2. [jquery 3.3.1](http://api.jquery.com/)
@@ -56,7 +58,7 @@
     categories: Hexo
     excerptImg: https://s.niuhp.com/blog/springcloud/helloworld/head.png
     tags: 
-         - 
+         - Hexo
     ```
     另外还可以修改 [_config.yml](_config.yml) 中 `max_excerpt_len` 属性的值指定文章摘要最大长度（添加摘要需要在文章中加入<!-- more -->标记，标记之前内容为摘要）
 6. 定制 *关于我* 插件内容，修改 [_config.yml](_config.yml) 中 `widget_about` 相关属性
@@ -78,12 +80,4 @@
 
 ### 贡献
 
-欢迎有兴趣的同学共同开发优化这个主题，有意者联系
-<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=329620302&site=qq&menu=yes">
-    <span class="fa-stack fa-lg" title="<%= __('widget_about_qq') %>">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
-    </span>
-</a>
-
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    
+欢迎有兴趣的同学共同开发优化这个主题，有意者联系 [QQ 329620302](http://wpa.qq.com/msgrd?v=3&uin=329620302&site=qq&menu=yes) 
