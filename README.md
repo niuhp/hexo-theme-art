@@ -80,6 +80,6 @@
 
 ### 贡献
 
-欢迎有兴趣的同学共同开发优化这个主题，有意者 [点击链接](//shang.qq.com/wpa/qunwpa?idkey=33b0766b375eeec50ccab60b885efe214b5e1a16601ea1ee6ece8d38f12217a2) 或者扫描下方二维码加入交流群
-![](https://s.niuhp.com/blog/hexo/theme-art/1523258392189.png)
+欢迎有兴趣的同学共同开发优化这个主题，有意者[点击链接](//shang.qq.com/wpa/qunwpa?idkey=33b0766b375eeec50ccab60b885efe214b5e1a16601ea1ee6ece8d38f12217a2)或者扫描下方二维码[加入交流群](//shang.qq.com/wpa/qunwpa?idkey=33b0766b375eeec50ccab60b885efe214b5e1a16601ea1ee6ece8d38f12217a2)  
+![](https://s.niuhp.com/blog/hexo/theme-art/1523258392189.png)  
 如有问题请联系 [QQ 329620302](http://wpa.qq.com/msgrd?v=3&uin=329620302&site=qq&menu=yes) 
