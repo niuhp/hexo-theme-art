@@ -172,18 +172,29 @@ pre
   .javascript .function
     color: highlight-blue
 
+$yaml-block
+  background-color:highlight-background
+  color:highlight-foreground
+  border:none
+  text-shadow:none
+
 .xml .code
   .line
     color: highlight-blue
   .tag, .name
     color: highlight-red
 
-.yaml .code .line
-  .attr, .string
-    color: highlight-yellow
+.yaml
+  @extend $yaml-block
+  .code .line
+    .attr, .string
+      color: highlight-yellow
+  .attr,.literal,.comment
+    @extend $yaml-block
+  .literal
+    color: highlight-blue
+  .comment
+    color: highlight-green
 .console
-  background-color:highlight-background
-  color:highlight-foreground
-  border:none
-  text-shadow:none
+  @extend $yaml-block
 
