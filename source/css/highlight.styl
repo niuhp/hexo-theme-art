@@ -52,6 +52,10 @@ code
   border-radius: 3px
 
 pre
+  code
+    border: none
+    text-shadow: none
+    background-color: highlight-background;
   @extend $code-block
 
 .highlight
@@ -90,7 +94,7 @@ pre
   padding: 15px article-padding 15px 0
   .gist-file
     border: none
-    font-family: font-mono
+    font-family: "Roboto", sans-serif ! important;
     margin: 0
     .gist-data
       background: none
@@ -173,12 +177,10 @@ pre
     color: highlight-blue
 
 $yaml-block
-  background-color:highlight-background
-  color:highlight-foreground
-  border:none
-  text-shadow:none
+  background-color: highlight-background
+  color: highlight-foreground
 
-.xml .code
+.xml .code, .xml
   .line
     color: highlight-blue
   .tag, .name
@@ -189,12 +191,15 @@ $yaml-block
   .code .line
     .attr, .string
       color: highlight-yellow
-  .attr,.literal,.comment
+  .attr, .literal, .comment
     @extend $yaml-block
   .literal
     color: highlight-blue
   .comment
     color: highlight-green
+
 .console
   @extend $yaml-block
+
+
 
